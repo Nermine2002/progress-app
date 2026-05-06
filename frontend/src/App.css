@@ -1,77 +1,92 @@
 body {
   margin: 0;
-  font-family: Arial;
-  background: #0f172a;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
 }
 
 .container {
   max-width: 500px;
-  margin: auto;
+  margin: 50px auto;
   padding: 20px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .card {
-  background: #1e293b;
+  background: rgba(30, 41, 59, 0.8);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
   margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 input {
   width: 100%;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
   border: none;
+  font-size: 16px;
 }
 
 button {
-  margin-top: 10px;
   width: 100%;
   padding: 12px;
-  background: #38bdf8;
+  margin-top: 10px;
+  border-radius: 10px;
   border: none;
-  border-radius: 8px;
-  font-weight: bold;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
 }
 
 .result {
   text-align: center;
 }
 
-.history-container {
-  margin-top: 20px;
+.result h2 {
+  font-size: 40px;
+}
+
+.stable {
+  color: #22c55e;
+}
+
+.fragile {
+  color: #facc15;
+}
+
+.critical {
+  color: #ef4444;
+}
+
+.streak {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.celebration {
+  background: #22c55e;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .history-item {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  margin-top: 8px;
-  border-radius: 8px;
-}
-
-.history-item.stable {
-  background: #22c55e;
-}
-
-.history-item.fragile {
-  background: #eab308;
-}
-
-.history-item.critical {
-  background: #ef4444;
-}
-
-.streak-box {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.congrats {
-  margin-top: 10px;
-  background: #22c55e;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
