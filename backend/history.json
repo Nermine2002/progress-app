@@ -1,0 +1,15 @@
+{
+  "history": [
+    {
+      "date": "2026-05-07",
+      "score": 33.7,
+      "rawScore": 49.625,
+      "correctedScore": 39.7,
+      "factor": 0.8,
+      "stable": false,
+      "streak": 0,
+      "deep_minutes": 120
+    }
+  ],
+  "streak": 0
+}
